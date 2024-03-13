@@ -15,12 +15,13 @@
       $(document).ready(function (e) {
         Office.onReady(function () {
           var address_Link = window.location.href;
-          console.log(address_Link);
+          // console.log(address_Link);
+          debugger;
           var address_arr = address_Link.split("=");
           var address_Token = address_arr[1];
           var Id_Token = address_Token.split("&");
           var access_token = Id_Token[0];
-          //console.log(access_token)
+          console.log(access_token);
           Office.context.ui.messageParent(access_token);
         });
       });
